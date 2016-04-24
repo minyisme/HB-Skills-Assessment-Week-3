@@ -14,8 +14,8 @@ def index_page():
     #
     # return render_template("index.html")
 
-@app.route("/application-form")
-def application_page():
+@app.route("/application-form") 
+def application_page():     
     """Show an application form page.
 
     Form includes input of first_name, last_name, salary, and job_title."""
