@@ -1,0 +1,32 @@
+<!-- <!doctype html>
+<html>
+<head>
+    <title>Job Requirements Results</title>
+</head>
+<body>
+    <h1>Job Requirements Results</h1> -->
+    <!-- table for results -->
+<!--     <br>
+    <p>
+        Thank you {{ first_name }} {{ last_name }}, for applying to be a {{ job_title }}. Your minimum salary requirement is {{ salary }} dollars.
+    </p>
+    <br>
+    <a href="/application-form">Back</a>
+</body>
+</html> -->
+
+{% extends 'base.html' %}
+{% block title %}Job Requirements Results{% endblock %}
+
+{% block content %}
+    <h1>Job Requirements Results</h1>
+    <!-- table for results -->
+    <br>
+    <p id="confirm_message">
+        Thank you {{ first_name }} {{ last_name }}, for applying to be a {{ job_title }}. Your minimum salary requirement is {{ salary }} dollars.
+    </p>
+    <br>
+    <a href="/application-form">Back</a>
+    <br>
+    <a href="/">Home</a>
+{% endblock %}

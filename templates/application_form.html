@@ -1,0 +1,73 @@
+<!-- <!doctype html>
+<html>
+<head>
+    <title>Job Requirements</title>
+</head>
+<body> -->
+<!-- your html goes here -->
+<!--     <h1>Job Requirements</h1>
+    <br> -->
+    <!-- not sure how to wrap html in sublime -->
+<!--     <p id="instructions">Applying for a job? Please fill out the form below to give us an idea of the basics requirements you're looking for. We'll take this information and connect you with the opportunities most suitable for you. Enjoy.</p>
+    <br>
+    <form action="/application" method="POST">
+        <label for="first_name">First Name</label>
+            <input id="first_name" class="job_reqs" type="text" name="first_name">
+        <br>
+        <label for="last_name">Last Name</label>
+            <input id="last_name" class="job_reqs" type="text" name="last_name">
+        <br>
+        <label for="salary">Minimum Salary Requirement*</label>
+            <input id="salary" class="job_reqs" type="text" name="salary">
+        <br>
+        <label for="job">Job Applying For</label>
+            <select id="job" class="job_reqs" name="select_job">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+        <br>
+        <input id="submit" type="submit" name="submit" value="Submit Requirements">
+    </form>
+    <br>
+    <footer>
+        <p>*annual salary</p>
+    </footer>
+</body>
+</html> -->
+
+{% extends 'base.html' %}
+{% block title %}Job Requirement{% endblock %}
+
+{% block content %}
+    <h1>Job Requirements</h1>
+    <br>
+    <!-- not sure how to wrap html in sublime -->
+    <p id="instructions">Applying for a job? Please fill out the form below to give us an idea of the basics requirements you're looking for. We'll take this information and connect you with the opportunities most suitable for you. Enjoy.</p>
+    <br>
+    <form action="/application" method="POST">
+        <label for="first_name">First Name</label>
+            <input id="first_name" class="job_reqs" type="text" name="first_name">
+        <br>
+        <label for="last_name">Last Name</label>
+            <input id="last_name" class="job_reqs" type="text" name="last_name">
+        <br>
+        <label for="salary">Minimum Salary Requirement*</label>
+            <input id="salary" class="job_reqs" type="text" name="salary">
+        <br>
+        <label for="job">Job Applying For</label>
+            <select id="job" class="job_reqs" name="select_job">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+        <br>
+        <input id="submit" type="submit" name="submit" value="Submit Requirements">
+    </form>
+    <br>
+    <footer>
+        <div>*annual salary</div>
+    </footer>
+    <br>
+    <a href="/">Home</a>
+{% endblock %}
